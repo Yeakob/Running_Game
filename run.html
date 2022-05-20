@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 80px;
+            background-color:rgb(12, 162, 182);
+            position: absolute;
+            overflow: hidden;
+        }
+        .gamebox
+        {
+            height: 630px;
+            width: 100vw;
+            background-color: rgb(12, 162, 182);
+           
+            overflow: hidden;
+        }
+        .sun
+        {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            position: absolute;
+            border-radius: 50%;
+            margin-top: 40px;
+            left: 60%;
+            box-shadow: 0px 0px 70px  rgb(218, 206, 39) ,5px 5px 70px  rgb(218, 206, 39),-5px 0px 70px  rgb(218, 206, 39), 0px 0px 70px rgb(218, 206, 39);
+        }
+        .charect
+        {
+            
+            width: 100px;
+            position: relative;
+            top: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+           
+        }
+        .animatec
+        {
+            animation-name: anim2;
+            animation-duration: .75s;
+            animation-timing-function:linear;
+           
+        }
+        .enemi
+        {
+            
+            width: 100px;
+            position: relative;
+            top: 375px;
+            left: 90vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: anim1;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes anim1 
+        {
+            0%
+            {
+                left: 100vw;
+            }
+            100%
+            {
+                left: -10vw;
+            }
+        }
+        @keyframes anim2 
+        {
+            0%
+            {
+                top: 450px;
+            }
+           50%
+           {
+               top: 300px;
+           }
+           60%
+           {
+               top: 300px;
+           }
+            100%
+            {
+                top: 450px;
+            }
+        }
+        .im1 
+        {
+            height: 150px;
+            margin-bottom: -11px;
+            
+            
+        }
+        .im2
+        {
+            height: 75px;
+        }
+        .ground
+        {
+            background-image: linear-gradient(to bottom ,green 3%,olive 15%);
+            position: absolute;
+            top: 666px;
+            height: 90px;
+            width: 100vw;
+            
+        }
+        .cloud1 
+        {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            right:0%;
+            animation: anim;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+        }
+        .cloud2
+        {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 30%;
+            right: 10%;
+            animation: anim1;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+           
+        }
+        .cloud3
+        {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 0%;
+            right: 10%;
+            animation: anim1;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+           
+        }
+        @keyframes anim
+        {
+            0%
+            {
+            right: -10%;
+            }
+            100%
+            {
+            right: 110%;
+            }
+        }
+        @keyframes anim4
+        {
+            0%
+            {
+            right: -50%;
+            }
+            100%
+            {
+            right: 110%;
+            }
+        }
+        @keyframes anim3
+        {
+            0%
+            {
+            right: -20%;
+            }
+            100%
+            {
+            right: 110%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="gamebox">
+        <div class="sun">
+            
+        </div>
+        <div class="cloud">
+            <img class="cloud1" src="./73189952_1680553118736377_7558358815586910208_n.png" alt="" srcset="">
+            <img class="cloud3" src="./73189952_1680553118736377_7558358815586910208_n.png" alt="" srcset="">
+            <img class="cloud2" src="./73189952_1680553118736377_7558358815586910208_n.png" alt="" srcset="">
+        </div>
+        <div class="charect" id="ch">
+            <img class="im1" src="./—Pngtree—anime character campus game character_3923580.png" alt="">
+
+        </div>
+        <div class="enemi" id="en">
+            <img class="im2" src="./—Pngtree—cartoon red dinosaur illustration_4656154.png" alt="">
+8
+        </div>
+        <div class="ground">
+
+        </div>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
